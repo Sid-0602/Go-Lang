@@ -2,6 +2,11 @@ package main
 
 import "fmt"
 
+var jwtToken int = 2247413440909749
+
+//login token is public as first letter is Capital.
+const LoginToken string = "akjsfw83y4791294jsdbf"
+
 func main() {
 
 	fmt.Println("This is Variables Section")
@@ -45,4 +50,21 @@ func main() {
 	var smallfloat2 float64 = 10000
 	fmt.Println(smallfloat2)
 	fmt.Printf("smallfloat2 is of type : %T\n", smallfloat2)
+
+	// default values ad some alias:
+
+	var anothervariable int
+	fmt.Println("This is default value assigned to variable: ", anothervariable)
+	fmt.Printf("Varaiable is of type: %T\n", anothervariable)
+
+	//implicit type:
+	var website = "google.com"
+	fmt.Println(website)
+	fmt.Printf("Type: %T\n", website)
+
+	//no var style:
+	numberOfUsers := 700000000.0
+	fmt.Println(numberOfUsers)
+	fmt.Printf("Type of variable: %T  \n", numberOfUsers)
+
 }
