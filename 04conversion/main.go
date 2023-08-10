@@ -18,7 +18,7 @@ func main() {
 
 	fmt.Println("Thanks for rating: ", input)
 
-	//conversion pckg:
+	//conversion package:
 	numRating, err := strconv.ParseFloat(strings.TrimSpace(input), 64)
 
 	if err != nil {
